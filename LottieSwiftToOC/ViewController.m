@@ -7,11 +7,13 @@
 
 #import "ViewController.h"
 #import <Lottie/Lottie.h>
+#import "LottieSwiftToOc-Swift.h"
 
 
 @interface ViewController ()
 
 @property(nonatomic, strong) LOTAnimationView *lottieView;
+@property(nonatomic, strong) LottieView *swiftLottieView;
 
 @end
 
@@ -21,9 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self swiftLottieView];
+    
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 60, 30)];
-    button.center = CGPointMake(self.view.center.x, button.center.y);
-    [button setTitle:@"测试" forState:UIControlStateNormal];
+    button.center = CGPointMake(self.view.center.x + 50, button.center.y);
+    [button setTitle:@"测试2" forState:UIControlStateNormal];
     button.backgroundColor = UIColor.blueColor;
     button.titleLabel.font = [UIFont systemFontOfSize:18];
     [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -33,7 +37,7 @@
 - (LOTAnimationView *)lottieView {
     if (!_lottieView) {
         _lottieView = [LOTAnimationView animationNamed:@"life_red"];
-        _lottieView.frame = CGRectMake(0, 200, 242, 84);
+        _lottieView.frame = CGRectMake(0, 300, 242, 84);
         _lottieView.loopAnimation = YES;
         _lottieView.contentMode = UIViewContentModeScaleAspectFit;
 //        _lottieView.backgroundBehavior = .pauseAndRestore
@@ -51,6 +55,16 @@
     [self.lottieView stop];
     [self.lottieView play];
 }
+
+#pragma mark - swift func
+- (LottieView *)swiftLottieView {
+    if (!_swiftLottieView) {
+        _swiftLottieView = [[LottieView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 300)];
+        [self.view addSubview:_swiftLottieView];
+    }
+    return _swiftLottieView;
+}
+
 
 
 @end

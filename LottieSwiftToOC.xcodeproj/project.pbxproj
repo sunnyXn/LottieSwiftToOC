@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B522B6C328F3F96E0034C594 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522B6C228F3F96E0034C594 /* LottieView.swift */; };
 		B58DA30028F3D01D00AE0E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58DA2FF28F3D01D00AE0E9B /* AppDelegate.m */; };
 		B58DA30328F3D01D00AE0E9B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58DA30228F3D01D00AE0E9B /* SceneDelegate.m */; };
 		B58DA30628F3D01D00AE0E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58DA30528F3D01D00AE0E9B /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		6D160211371A190AFC527FA1 /* Pods-LottieSwiftToOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieSwiftToOC.debug.xcconfig"; path = "Target Support Files/Pods-LottieSwiftToOC/Pods-LottieSwiftToOC.debug.xcconfig"; sourceTree = "<group>"; };
 		770CC7E8CD36D4CF2513C0FE /* libPods-LottieSwiftToOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LottieSwiftToOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B522B6BD28F3F9200034C594 /* LottieSwiftToOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LottieSwiftToOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		B522B6C228F3F96E0034C594 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		B58DA2FB28F3D01D00AE0E9B /* LottieSwiftToOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieSwiftToOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58DA2FE28F3D01D00AE0E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B58DA2FF28F3D01D00AE0E9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,11 +99,13 @@
 				B58DA30228F3D01D00AE0E9B /* SceneDelegate.m */,
 				B58DA30428F3D01D00AE0E9B /* ViewController.h */,
 				B58DA30528F3D01D00AE0E9B /* ViewController.m */,
+				B522B6C228F3F96E0034C594 /* LottieView.swift */,
 				B58DA30728F3D01D00AE0E9B /* Main.storyboard */,
 				B58DA30A28F3D01F00AE0E9B /* Assets.xcassets */,
 				B58DA30C28F3D01F00AE0E9B /* LaunchScreen.storyboard */,
 				B58DA30F28F3D01F00AE0E9B /* Info.plist */,
 				B58DA31028F3D01F00AE0E9B /* main.m */,
+				B522B6BD28F3F9200034C594 /* LottieSwiftToOC-Bridging-Header.h */,
 			);
 			path = LottieSwiftToOC;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				TargetAttributes = {
 					B58DA2FA28F3D01D00AE0E9B = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -238,6 +244,7 @@
 			files = (
 				B58DA30628F3D01D00AE0E9B /* ViewController.m in Sources */,
 				B58DA30028F3D01D00AE0E9B /* AppDelegate.m in Sources */,
+				B522B6C328F3F96E0034C594 /* LottieView.swift in Sources */,
 				B58DA31128F3D01F00AE0E9B /* main.m in Sources */,
 				B58DA30328F3D01D00AE0E9B /* SceneDelegate.m in Sources */,
 			);
@@ -381,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -398,6 +406,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.LottieSwiftToOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LottieSwiftToOC/LottieSwiftToOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -408,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,6 +437,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.LottieSwiftToOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LottieSwiftToOC/LottieSwiftToOC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
