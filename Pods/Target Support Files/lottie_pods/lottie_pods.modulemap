@@ -1,0 +1,6 @@
+module Lottie {
+  umbrella header "lottie_pods-umbrella.h"
+
+  export *
+  module * { export * }
+}
