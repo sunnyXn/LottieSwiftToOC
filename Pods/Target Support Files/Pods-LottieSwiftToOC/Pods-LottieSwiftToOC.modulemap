@@ -1,6 +1,0 @@
-module Pods_LottieSwiftToOC {
-  umbrella header "Pods-LottieSwiftToOC-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,1 +1,0 @@
-../../../../../Localpods/lottie_pods/Pod/Classes/lottie-ios/Sources/Header/Lottie.h
