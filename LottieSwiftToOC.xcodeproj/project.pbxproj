@@ -14,6 +14,12 @@
 		B58DA30B28F3D01F00AE0E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58DA30A28F3D01F00AE0E9B /* Assets.xcassets */; };
 		B58DA30E28F3D01F00AE0E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58DA30C28F3D01F00AE0E9B /* LaunchScreen.storyboard */; };
 		B58DA31128F3D01F00AE0E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B58DA31028F3D01F00AE0E9B /* main.m */; };
+		B58DA31F28F3EAF100AE0E9B /* life_red.json in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31828F3EAF100AE0E9B /* life_red.json */; };
+		B58DA32028F3EAF100AE0E9B /* lifeRow.json in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31928F3EAF100AE0E9B /* lifeRow.json */; };
+		B58DA32128F3EAF100AE0E9B /* life_imgRow_0.png in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31B28F3EAF100AE0E9B /* life_imgRow_0.png */; };
+		B58DA32228F3EAF100AE0E9B /* life_imgRow_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31C28F3EAF100AE0E9B /* life_imgRow_1.png */; };
+		B58DA32328F3EAF100AE0E9B /* life_img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31D28F3EAF100AE0E9B /* life_img_0.png */; };
+		B58DA32428F3EAF100AE0E9B /* life_img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B58DA31E28F3EAF100AE0E9B /* life_img_1.png */; };
 		D0C10C81370C05023D496B26 /* libPods-LottieSwiftToOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 770CC7E8CD36D4CF2513C0FE /* libPods-LottieSwiftToOC.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +38,12 @@
 		B58DA30D28F3D01F00AE0E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B58DA30F28F3D01F00AE0E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58DA31028F3D01F00AE0E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B58DA31828F3EAF100AE0E9B /* life_red.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = life_red.json; sourceTree = "<group>"; };
+		B58DA31928F3EAF100AE0E9B /* lifeRow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lifeRow.json; sourceTree = "<group>"; };
+		B58DA31B28F3EAF100AE0E9B /* life_imgRow_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_imgRow_0.png; sourceTree = "<group>"; };
+		B58DA31C28F3EAF100AE0E9B /* life_imgRow_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_imgRow_1.png; sourceTree = "<group>"; };
+		B58DA31D28F3EAF100AE0E9B /* life_img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_img_0.png; sourceTree = "<group>"; };
+		B58DA31E28F3EAF100AE0E9B /* life_img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_img_1.png; sourceTree = "<group>"; };
 		CD5D7F329ECA5FC058E89990 /* Pods-LottieSwiftToOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieSwiftToOC.release.xcconfig"; path = "Target Support Files/Pods-LottieSwiftToOC/Pods-LottieSwiftToOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +65,6 @@
 				6D160211371A190AFC527FA1 /* Pods-LottieSwiftToOC.debug.xcconfig */,
 				CD5D7F329ECA5FC058E89990 /* Pods-LottieSwiftToOC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +89,7 @@
 		B58DA2FD28F3D01D00AE0E9B /* LottieSwiftToOC */ = {
 			isa = PBXGroup;
 			children = (
+				B58DA31728F3EAF100AE0E9B /* life_animation */,
 				B58DA2FE28F3D01D00AE0E9B /* AppDelegate.h */,
 				B58DA2FF28F3D01D00AE0E9B /* AppDelegate.m */,
 				B58DA30128F3D01D00AE0E9B /* SceneDelegate.h */,
@@ -91,6 +103,27 @@
 				B58DA31028F3D01F00AE0E9B /* main.m */,
 			);
 			path = LottieSwiftToOC;
+			sourceTree = "<group>";
+		};
+		B58DA31728F3EAF100AE0E9B /* life_animation */ = {
+			isa = PBXGroup;
+			children = (
+				B58DA31828F3EAF100AE0E9B /* life_red.json */,
+				B58DA31928F3EAF100AE0E9B /* lifeRow.json */,
+				B58DA31A28F3EAF100AE0E9B /* life_images */,
+			);
+			path = life_animation;
+			sourceTree = SOURCE_ROOT;
+		};
+		B58DA31A28F3EAF100AE0E9B /* life_images */ = {
+			isa = PBXGroup;
+			children = (
+				B58DA31B28F3EAF100AE0E9B /* life_imgRow_0.png */,
+				B58DA31C28F3EAF100AE0E9B /* life_imgRow_1.png */,
+				B58DA31D28F3EAF100AE0E9B /* life_img_0.png */,
+				B58DA31E28F3EAF100AE0E9B /* life_img_1.png */,
+			);
+			path = life_images;
 			sourceTree = "<group>";
 		};
 		D599491CC8F960B53D2ABB0D /* Frameworks */ = {
@@ -160,8 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58DA30E28F3D01F00AE0E9B /* LaunchScreen.storyboard in Resources */,
+				B58DA32028F3EAF100AE0E9B /* lifeRow.json in Resources */,
 				B58DA30B28F3D01F00AE0E9B /* Assets.xcassets in Resources */,
 				B58DA30928F3D01D00AE0E9B /* Main.storyboard in Resources */,
+				B58DA32328F3EAF100AE0E9B /* life_img_0.png in Resources */,
+				B58DA32428F3EAF100AE0E9B /* life_img_1.png in Resources */,
+				B58DA31F28F3EAF100AE0E9B /* life_red.json in Resources */,
+				B58DA32228F3EAF100AE0E9B /* life_imgRow_1.png in Resources */,
+				B58DA32128F3EAF100AE0E9B /* life_imgRow_0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

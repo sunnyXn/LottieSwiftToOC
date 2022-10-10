@@ -32,7 +32,7 @@
 
 - (LOTAnimationView *)lottieView {
     if (!_lottieView) {
-        _lottieView = [LOTAnimationView animationNamed:@"publish_entrance_lottie"];
+        _lottieView = [LOTAnimationView animationNamed:@"life_red"];
         _lottieView.frame = CGRectMake(0, 200, 242, 84);
         _lottieView.loopAnimation = YES;
         _lottieView.contentMode = UIViewContentModeScaleAspectFit;
